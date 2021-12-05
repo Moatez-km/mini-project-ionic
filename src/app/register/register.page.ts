@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AngularFireAuth} from '@angular/fire/compat/auth';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.page.html',
@@ -14,10 +15,13 @@ export class RegisterPage implements OnInit {
 }
 
 
-  constructor(public ngFireAuth: AngularFireAuth) { }
+  constructor(private router: Router,public ngFireAuth: AngularFireAuth) { }
 
   ngOnInit() {
 
+  }
+  back(){
+    this.router.navigate(['/login']);
   }
 
   async onRegister(){

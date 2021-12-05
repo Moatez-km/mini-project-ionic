@@ -1,6 +1,12 @@
 .text-btn{
   color:turquoise;
 }
+.text-btn-right{
+  color:transparent;
+  text-align: right;
+  margin-left:300px;
+  padding-right: 15px;
+}
 .vertical-align-center{
   display: flex !important;
   align-content: center !important;

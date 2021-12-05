@@ -1,13 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>register</ion-title>
+    <ion-title>Register now !</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
+  <button expand="block" clear  class="text-btn-right"(click)="back()" ><img src="assets/back.png" alt="login-logo" width="50px" height="40px"></button>
   <ion-grid class="ion-text-center grid-center">
     <ion-row>
       <ion-col class="ion-text-center">
-
+        <img src="assets/register.png" alt="login-logo" width="250px" height="250px">
         <ion-item class="input-center">
           <ion-label position="floating" >Email</ion-label>
           <ion-input [(ngModel)]="user.email"></ion-input>

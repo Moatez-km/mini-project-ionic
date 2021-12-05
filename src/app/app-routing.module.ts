@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'to-do',
+    loadChildren: () => import('./to-do/to-do.module').then( m => m.ToDoPageModule)
+  },
+  {
+    path: 'addnew-task',
+    loadChildren: () => import('./addnew-task/addnew-task.module').then( m => m.AddnewTaskPageModule)
+  },
 ];
 
 @NgModule({
