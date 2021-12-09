@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
+
 @Component({
   selector: 'app-addnew-task',
   templateUrl: './addnew-task.page.html',
@@ -26,12 +27,14 @@ export class AddnewTaskPage implements OnInit {
     this.taskCategory=this.categories[index]
 
   }
-  addTask(){
+  async addTask(){
     this.taskObject=({itemName:this.taskName,
       itemDueDate:this.taskDate,
       itemPriority:this.taskPriority,
       itemCategory:this.taskCategory
     })
+
+
     this.dismis()
   }
 }

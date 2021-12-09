@@ -29,6 +29,7 @@ export class RegisterPage implements OnInit {
     console.log(user);
     if(user.user.email){
       alert('Register succuess!');
+      this.router.navigate(['/login']);
     }else{
       alert('Register Faild !');
     }
